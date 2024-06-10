@@ -16,7 +16,7 @@ export default function MainHeader() {
         <LogoNav />
         <nav className="flex md:justify-between justify-end md:w-11/12 w-3/4">
           <ul className="hidden md:flex items-center">
-            <NavLink href="/">
+            <NavLink href="/browse">
               <li>Home</li>
             </NavLink>
             <NavLink href="/tv-shows">

@@ -56,7 +56,7 @@ export default function LogoNav() {
             }`}
           />
         </div>
-        <Link href="/">
+        <Link href="/browse">
           <Image
             src={Logo}
             width={110}

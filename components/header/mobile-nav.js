@@ -25,7 +25,7 @@ export default function MobileNav({ open }) {
       <hr className="border-1 border-solid border-x-white/20 my-3" />
 
       <ul className="flex flex-col ml-4">
-        <NavLink href="/">
+        <NavLink href="/browse">
           <li>Home</li>
         </NavLink>
         <NavLink href="/tv-shows">
