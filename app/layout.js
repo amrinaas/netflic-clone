@@ -1,5 +1,4 @@
 import './globals.css';
-import MainHeader from '@/components/header/main-header';
 
 export const metadata = {
   title: 'Netfliks',
@@ -9,10 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true}>
-        <MainHeader />
-        {children}
-      </body>
+      <body suppressHydrationWarning={true}>{children}</body>
     </html>
   );
 }
