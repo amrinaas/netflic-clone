@@ -6,8 +6,9 @@ export default async function BrowsePage() {
   const movie = result.results;
 
   return (
-    <div>
+    <section className="ml-10">
+      <h1 className="font-semibold text-xl mb-2">Popular Now</h1>
       <Slider movies={movie} />
-    </div>
+    </section>
   );
 }
