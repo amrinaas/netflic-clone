@@ -11,7 +11,7 @@ import { MdFace3 } from 'react-icons/md';
 
 export default function MainHeader() {
   return (
-    <header className="my-5 lg:mx-12 md:mx-8 mx-4 max-w-full">
+    <header className="py-5 lg:px-12 md:px-8 px-4 fixed bg-black w-full">
       <div className="flex">
         <LogoNav />
         <nav className="flex md:justify-between justify-end md:w-11/12 w-3/4">
