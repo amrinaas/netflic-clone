@@ -9,7 +9,7 @@ export default function NavLink({ children, href }) {
   return (
     <div
       className={`lg:mx-3 md:mx-1 lg:text-sm md:text-xs ${
-        path.startsWith(href) ? `font-semibold` : `font-normal text-gray-400`
+        path.startsWith(href) ? `font-semibold` : `font-normal text-gray-300`
       } hover:text-white cursor-pointer`}
     >
       <Link href={href}>{children}</Link>
