@@ -25,7 +25,7 @@ export default function Hero({ data }) {
         backgroundImage: `url(${process.env.NEXT_PUBLIC_TMDB_IMAGE_URL}${movie.backdrop_path})`,
       }}
     >
-      <div className="mx-10 py-52">
+      <div className="mx-16 py-52">
         <h1 className="text-7xl">{movie.title}</h1>
         <p className="w-2/5 my-5">{truncate(movie.overview, 200)}</p>
         <div className="flex">
