@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import SliderControl from './slider-control';
 import SliderItem from './slider-item';
 
-export default function Slider({ movies }) {
+export default function Slider({ movies, title, isGenre }) {
   const [sliderHasMoved, setSliderHasMoved] = useState(false); // to display prev arrow
   const [sliderMoving, setSliderMoving] = useState(false); // slider animation
   const [movePercentage, setMovePercentage] = useState(0); // to shift slider during animation
@@ -90,6 +90,7 @@ export default function Slider({ movies }) {
     for (let index of indexToDisplay) {
       sliderContents.push(
         <SliderItem
+          isGenre={isGenre}
           {...movies[index]}
           key={`${movies[index]}-${index}`}
           width={100 / itemsInRow}
@@ -201,11 +202,11 @@ export default function Slider({ movies }) {
   }
 
   return (
-    <div className="py-0 px-1 relative mb-10 overflow-x-hidden">
+    <div className="py-0 px-1 relative mb-10 overflow-x-hidden ml-10">
+      <h1 className="font-semibold text-xl mb-2">{title}</h1>
       {sliderHasMoved && (
         <SliderControl arrowDirection="left" onClick={handlePrev} />
       )}
-
       <div className="whitespace-nowrap" style={style}>
         {renderSliderContent()}
       </div>
