@@ -34,7 +34,7 @@ export default function LogoNav() {
     <>
       <div className="flex">
         <div
-          className="z-50 mr-3 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
+          className="z-10 mr-3 flex relative w-8 h-8 flex-col justify-between items-center md:hidden"
           onClick={() => {
             setOpen(!open);
           }}
