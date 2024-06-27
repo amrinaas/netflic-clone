@@ -15,7 +15,7 @@ export default function SliderItem({
       href={`/popular/${id}`}
     >
       <img
-        src={`https://image.tmdb.org/t/p/original/${
+        src={`${process.env.NEXT_PUBLIC_TMDB_IMAGE_URL}/${
           !isGenre ? poster_path : backdrop_path
         }`}
         alt={title}
