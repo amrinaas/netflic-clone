@@ -26,7 +26,7 @@ export default function Hero({ data }) {
       }}
     >
       <div className="mx-16 py-52">
-        <h1 className="text-7xl">{movie.title}</h1>
+        <h1 className="text-7xl">{movie.title ?? movie.name}</h1>
         <p className="w-2/5 my-5">{truncate(movie.overview, 200)}</p>
         <div className="flex">
           <button className="px-6 py-1 text-black font-semibold bg-gray-200 rounded-md mr-3 flex justify-center items-center hover:bg-gray-200/90">
