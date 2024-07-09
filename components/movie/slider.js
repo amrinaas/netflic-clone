@@ -202,12 +202,12 @@ export default function Slider({ movies, title, isGenre }) {
   }
 
   return (
-    <div className="py-0 px-1 relative mb-10 overflow-x-hidden ml-10">
-      <h1 className="font-semibold text-xl mb-2">{title}</h1>
+    <div className="px-1 relative">
+      <h1 className="font-semibold text-xl mb-2 ml-10">{title}</h1>
       {sliderHasMoved && (
         <SliderControl arrowDirection="left" onClick={handlePrev} />
       )}
-      <div className="whitespace-nowrap" style={style}>
+      <div className="whitespace-nowrap ml-10" style={style}>
         {renderSliderContent()}
       </div>
       <SliderControl arrowDirection="right" onClick={handleNext} />
