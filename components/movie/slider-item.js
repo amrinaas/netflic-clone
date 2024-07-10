@@ -19,7 +19,7 @@ export default function SliderItem({
     <Link
       style={{ width: `${width}%` }}
       href={`/popular/${id}`}
-      className="group mx-1 hover:scale-125 hover:shadow ease-out duration-500 hover:origin-bottom-left inline-block"
+      className="group hover:z-30 mx-1 hover:scale-125 hover:shadow ease-out duration-500 hover:origin-bottom-left inline-block"
     >
       <div className="w-full !bg-cover !bg-center">
         <img
@@ -31,7 +31,7 @@ export default function SliderItem({
         />
       </div>
 
-      <div className="box-content bg-black/90 w-full py-3 ease-out duration-300 rounded-b-md opacity-0 group-hover:opacity-100">
+      <div className="box-content bg-black/90 w-full pt-2 ease-out duration-300 rounded-b-md opacity-0 group-hover:opacity-100">
         <div className="flex items-center justify-between">
           <span className="rounded-full border-[1px] border-gray-400 overflow-hidden text-xs p-2 text-center mx-1">
             <FaPlay />
@@ -46,8 +46,8 @@ export default function SliderItem({
             <FaAngleDown />
           </span>
         </div>
-        <div className="text-xs mt-2">
-          <p className="font-bold">{title}</p>
+        <div className="text-xs mt-1">
+          <p className="font-bold !whitespace-normal">{title}</p>
           <p className="text-green-800 font-bold">
             {vote_average.toFixed(1)} / 10
           </p>
