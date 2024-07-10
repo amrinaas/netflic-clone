@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/footer';
 import MainHeader from '@/components/header/main-header';
 
 export const metadata = {
@@ -10,6 +11,7 @@ export default function BrowseLayout({ feature, popular, genre }) {
       {feature}
       {popular}
       {genre}
+      <Footer />
     </section>
   );
 }
