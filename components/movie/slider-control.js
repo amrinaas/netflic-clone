@@ -3,10 +3,10 @@ import { FaAnglesLeft, FaAnglesRight } from 'react-icons/fa6';
 export default function SliderControl({ arrowDirection, onClick }) {
   return (
     <div
-      className={`absolute top-0 h-full w-[10%] flex items-center justify-center text-3xl text-white z-10 ${
+      className={`absolute top-0 h-full flex items-center justify-center text-3xl text-white z-10 ${
         arrowDirection === 'right'
-          ? '-right-5 bg-gradient-to-r from-white/0 to-black'
-          : 'left-0  bg-gradient-to-l from-white/0 to-black'
+          ? '-right-5 w-[15%] bg-gradient-to-r from-white/0 to-black'
+          : 'left-0 w-[10%]  bg-gradient-to-l from-white/0 to-black'
       }`}
     >
       <div
