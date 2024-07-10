@@ -18,6 +18,10 @@ body {
   color: rgb(var(--light-rgb));
   background: rgb(var(--dark-rgb));
   width: 100%;
+}
+
+body,
+html {
   overflow-x: hidden;
 }
 
